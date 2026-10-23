@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TCPA Texts-as-Calls Dashboard: All 94 Federal Districts</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1d2430;--mut:#5b6676;--red:#b42318;--redbg:#fdecea;--grn:#067647;--grnbg:#e7f6ec;--gry:#475467;--grybg:#eef0f3;--amb:#b54708;--ambbg:#fef3e2;--line:#e4e7ec}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:#101828;color:#fff;padding:28px 32px}header h1{margin:0 0 4px;font-size:24px}header p{margin:0;color:#cbd2dc}
+.upd{display:inline-block;margin:10px 8px 0 0;background:#344054;padding:4px 10px;border-radius:999px;font-size:13px}
+main{max-width:1200px;margin:0 auto;padding:24px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:16px}
+.stat{font-size:34px;font-weight:700}.lbl{color:var(--mut);font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+.red{color:var(--red)}.grn{color:var(--grn)}.gry{color:var(--gry)}
+.alert{background:var(--redbg);border-left:5px solid var(--red);padding:14px 18px;border-radius:8px;margin-bottom:16px}
+.map{background:#eff4ff;border:1px solid #b2ccff;border-radius:12px;padding:16px 20px;margin-bottom:16px}
+.map a.btn{display:inline-block;margin-top:8px;background:#175cd3;color:#fff;padding:8px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+h2{font-size:18px;margin:0 0 12px}table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f2f4f7;font-weight:600;position:sticky;top:0}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap}
+.p-red{background:var(--redbg);color:var(--red)}.p-green{background:var(--grnbg);color:var(--grn)}.p-grey{background:var(--grybg);color:var(--gry)}.p-yel{background:#fef7c3;color:#854a0e}.yel{color:#ca8504}.p-amb{background:var(--ambbg);color:var(--amb);margin-left:4px}
+.controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+input,select{padding:9px 12px;border:1px solid var(--line);border-radius:8px;font-size:14px}input{flex:1;min-width:220px}
+.scroll{max-height:640px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+a{color:#175cd3}footer{color:var(--mut);font-size:12px;text-align:center;padding:20px}
+.two{display:grid;gap:16px;grid-template-columns:1fr 1fr}@media(max-width:800px){.two{grid-template-columns:1fr}}
+.cbar{display:flex;height:14px;border-radius:7px;overflow:hidden;margin-top:12px}.cbar div{height:100%}
+</style></head><body>
+<header><h1>TCPA Text Message Decisions: All 94 Federal Districts</h1>
+<p>Are texts "telephone calls" under the Do-Not-Call private right of action, 47 U.S.C. § 227(c)(5)?</p>
+<span class="upd">Last updated: <span id="lastUpdated">October 23, 2026</span></span><span class="upd">Independent research through October 23, 2026</span></header>
+<main>
+<div class="map"><strong>Interactive map:</strong> <a href="map.html">Open the color-coded map of all 94 districts</a></div>
+<div class="alert"><strong>Florida alert:</strong> The Middle and Northern Districts of Florida are <strong>defendant-friendly: texts are not calls</strong> under § 227(c)(5). The Southern District is split by judge (yellow).</div>
+<p>Full independent research dashboard (filterable table, cases, sources) is loaded below. Status colors: red = texts not calls, green = texts are calls, yellow = split by judge, grey = no ruling.</p>
+<iframe src="dashboard.html" style="width:100%;height:800px;border:none;"></iframe>
+</main>
+<footer>Independent research tracker. Not legal advice.</footer>
+</body></html>
